@@ -1,0 +1,465 @@
+body {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  height: 860px;
+  background-color: #BDBDBD;
+  font-family: Arial, Helvetica, "Times New Roman", sans-serif;
+  text-align:justify;
+  color: #000000;
+  margin-top: 0;
+  border-style: double;
+}
+
+/* Cabecera */
+header {
+  width: 100%;
+  height: 192px;
+  position: relative;
+  background-image: url("../images/logooverseas.png");
+  background-size: 100% 192px;
+  margin-top: -1em;
+  border-bottom-style: ridge;
+  border-color: #696969;
+}
+
+/* Iconos */
+#cabecera_superior {
+  margin-left: -3%;
+}
+
+#cabecera_superior ul {
+  list-style-type: none;
+  border-bottom-style: none;
+  border-width: thin;
+}
+
+#cabecera_superior ul li {
+  margin-left: 0.8%;
+  font-size: 0.8em;
+  display: inline;
+}
+
+#cabecera_superior ul li a{
+  text-decoration:none;
+  color: #000000;
+}
+
+#cabecera_superior ul li a.InicioLnk {
+  padding-left: 1.8%;
+  background: url(../images/icons/house.png) center left no-repeat;
+  background-size: 35%;    
+  -moz-background-size: 35%;    
+  -o-background-size:35%;    
+  -webkit-background-size: 35%;      
+}
+
+#cabecera_superior ul li a.ImprimirLnk {
+  padding-left: 1.8%;
+  background: url(../images/icons/printer.png) center left no-repeat;
+  background-size: 25%;    
+  -moz-background-size: 25%;    
+  -o-background-size:25%;    
+  -webkit-background-size: 25%; 
+}
+
+#cabecera_superior ul li a.MapaWebLnk {
+  padding-left: 1.8%;
+  background: url(../images/icons/sitemap.png) center left no-repeat;
+  background-size: 20%;    
+  -moz-background-size: 20%;    
+  -o-background-size:20%;    
+  -webkit-background-size: 20%; 
+}
+
+#cabecera_superior ul li a.ContactoLnk {
+  padding-left: 1.8%;
+  background: url(../images/icons/email.png) center left no-repeat;
+  background-size: 20%;    
+  -moz-background-size: 20%;    
+  -o-background-size:20%;    
+  -webkit-background-size: 20%; 
+}
+
+/* Idiomas */
+#idiomas {
+  margin-left: 82%;
+  position: relative;
+  top: 71%;
+  font-size: 0.8em;
+  display: inline;
+}
+
+#idiomas a {
+  margin-left: 1%;
+  text-decoration: none;
+  color: #000000;
+}
+
+#idiomas a.strip1 {
+  padding-left: 2.5%;
+  background: url(../images/flaps/es.png) center left no-repeat;
+  background-size: 32%;    
+  -moz-background-size: 32%;    
+  -o-background-size:32%;    
+  -webkit-background-size: 32%;
+}
+
+#idiomas a.strip2 {
+  padding-left: 2.5%;
+  background: url(../images/flaps/en.png) center left no-repeat;
+  background-size: 32%;    
+  -moz-background-size: 32%;    
+  -o-background-size:32%;    
+  -webkit-background-size: 32%; 
+}
+
+/* Pie de pagína */
+footer{
+  margin-left: 27%;
+  font-size: 0.7em;
+  height: 48px;
+  width: 100%;
+}
+
+footer p {
+  display: inline;
+}
+
+footer p #legal {
+  color: #000000;
+}
+
+/* Menú */
+nav {
+  width: 24.7%;
+  height: 630px;
+  float: left;
+  background-color: #2E64FE;
+  padding-top: 2%;
+  border-right-style: dotted;
+  border-color: #0B0B61;
+}
+
+nav li{
+  margin-top: 2.5%;
+  margin-left: 10%;
+  width: 80%;
+  list-style-type: none;
+  background-color: #2E64FE;
+  /*border-bottom-style: dotted;*/
+  border-color: #FFFFFF;
+  border-width: thin;
+}
+
+nav li a{
+  font-size: 0.8em;
+  font-family: Helvetica, cursive;
+  font-variant: small-caps;
+  text-align: left;
+  color: #FFFFFF;
+  text-decoration: none;
+  display:block;
+  background-color: #2E64FE;
+}
+
+nav li a:hover {
+  background-color: #6495ED;
+  text-decoration: none; 
+  border-radius: 5px;
+}
+
+nav .parent {
+  list-style-image: url("../images/marca.jpeg");
+  list-style-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+nav li.parent a:hover{
+  cursor: pointer;
+} 
+
+nav li ul li {
+  list-style-image: none;
+}
+/* Fin del menú */
+
+/* Contenido */
+article {
+  width: 75%;
+  height: 650px;
+  float: right;
+  background-color: #E0F2F7;
+}
+
+article #header {
+  font-size: 1.2em;
+  color: #0404B4;
+  width: 40%;
+  margin-left: 15%;
+  margin-top: 5%;
+  background-color: #FFFAFA;
+  text-align: left;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -webkit-box-shadow: 5px 5px 5px #000000;
+  -moz-box-shadow: 5px 5px 5px #000000;
+  -o-box-shadow: 5px 5px 5px #000000;
+}
+
+article #header h1{
+  padding-left: 3.5%;
+}
+
+#contenido {
+  font-size: 0.8em;
+  margin-left: 12.5%;
+  width: 70%;
+  padding: 2%;
+  margin-top: -3.5%;
+  background-color: #FFFAFA;
+  border-radius: 15px;	
+  -webkit-box-shadow: 12px 12px 12px #000000;
+  -moz-box-shadow: 12px 12px 12px #000000;
+  -o-box-shadow: 12px 12px 12px #000000;
+}
+
+#contenido:first-letter{
+  display:block;
+  margin:5px 0 0 5px;
+  float:left;
+  font-size:4em;
+}
+
+#header1 {
+  font-size: 0.9em;
+}
+
+#contenido1 {
+  font-size: 0.8em;
+  margin-left: 12.5%;
+  width: 70%;
+  padding: 2%;
+  padding-top: 1%;
+  margin-top: -3.5%;
+  background-color: #FFFAFA;
+  border-radius: 15px;	
+  -webkit-box-shadow: 12px 12px 12px #000000;
+  -moz-box-shadow: 12px 12px 12px #000000;
+  -o-box-shadow: 12px 12px 12px #000000;
+}
+
+#contenido1 > p:first-letter{
+  display:block;
+  margin:5px 0 0 5px;
+  float:left;
+  font-size:4em;
+}
+
+#contform {
+  font-size: 0.8em;
+  margin-left: 12.5%;
+  width: 70%;
+  height: 480px;
+  padding: 2%;
+  margin-top: -3.5%;
+  background-color: #FFFAFA;
+  border-radius: 15px;	
+  -webkit-box-shadow: 12px 12px 12px #000000;
+  -moz-box-shadow: 12px 12px 12px #000000;
+  -o-box-shadow: 12px 12px 12px #000000;
+}
+
+article ul li {
+  list-style-type: circle;
+}
+
+#fotografia {
+  height: 20%;
+  width: 20%;
+  float: right;
+  margin-right: 7%;
+  margin-top: 3%;
+  border-radius: 25px;
+  padding: 1%;
+}
+
+#carta p {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -o-column-count: 2;
+}
+
+#agr {
+  font-size: 0.8em;
+  float: right;
+  position:relative;
+  bottom: 90px;
+  margin-right: 115px;
+  text-align: right;
+  width: 25%;
+}
+/* Fin del contenido */
+
+/* Galería */
+#sliderContainer {
+  top: 10%; 
+  width: 500px; 
+  height: 300px; 
+  position: relative; 
+  border-top: 2px solid #999; 
+  border-bottom: 2px solid #999; 
+  margin: 0 auto; 
+}
+
+.slideContent {  
+  background:url("../images/contentBg.png") repeat scroll 0 0 transparent; 
+  position: absolute; 
+  bottom:0px; 
+  padding: 10px; 
+  width: 500px; 
+}
+
+.slide h3 {  
+  font: 26px/1em 'Rokkitt', serif; 
+  color: #FFF;  
+  margin: 0 0 5px 0; 
+}
+
+.slide p { 
+  font-size: 14px; 
+  color: #FFF; 
+  margin: 0; 
+}
+
+.jFlowSlideContainer { 
+  overflow: hidden; 
+}
+
+.jFlowSlideContainer a { 
+  color: #F90; 
+  text-decoration: none; 
+  font-style: italic; 
+}
+
+.jFlowSlideContainer a:hover { 
+  text-decoration: none; 
+}
+
+.jFlowSlideContainer a:focus { 
+  position: relative; 
+  top: 1px; 
+}
+
+.jFlowNext { 
+  background:url("../images/arrows.png") no-repeat scroll 0 -35px transparent; 
+  height:130px; 
+  position:absolute; 
+  top:75px; 
+  right: -50px; 
+  width:50px; 
+  cursor:pointer; 
+}
+
+.jFlowPrev { 
+  background:url("../images/arrows.png") no-repeat scroll -84px -35px transparent; 
+  height:130px; 
+  position:absolute; 
+  top:75px; 
+  left: -50px; 
+  width:50px; 
+  cursor:pointer; 
+}
+
+.jFlowPrev:hover { 
+  background-position: -84px -235px; 
+}
+
+.jFlowNext:hover { 
+  background-position: 0px -235px; 
+}
+
+#myController {
+  position: absolute; 
+  top: 5px; 
+  right: 5px; 
+}
+
+.jFlowControl { 
+  background:url("../images/bullet.png") no-repeat scroll 0px 0px transparent;  
+  float: left; 
+  width: 15px; 
+  height: 15px;
+}
+
+.jFlowControl:hover { 
+  background-position: -32px 0px; 
+  cursor: pointer; 
+}
+
+.jFlowSelected, .jFlowSelected:hover {
+  background-position: -15px 0px;   
+}
+/* Fin de la galería */
+
+/* Formulario */
+a.form{
+  text-decoration: underline;
+  font-size: 1em;
+  color: #000;
+}
+
+#formulario {   
+  font-size: 0.8em;
+}
+
+
+#formulario label{
+  display: block;
+  float:left;
+  width:175px;
+  font-weight:bold;
+  font-size:1.2em;
+  position: relative;
+
+}
+
+label.error { 
+  position: relative;
+  margin-top:-14px;
+  color:red;
+  float: left;
+}
+
+#formulario input{
+  width: 300px;
+  display: block;
+}
+
+#formulario #mensaje{
+  display: block;
+  width:300px;
+  height: 150px;
+  resize: none;
+}
+
+
+#formulario .botonAcceder{
+  width: 100px;
+  height: 30px;
+  position: relative;
+  left: 200px; 
+}
+
+#formulario #anotacion {
+  font-size: 0.7em;
+  color:#DF0101;
+}
+
+.gracias{
+  color:red;
+  font-size:1.5em;
+  position: relative;
+  top: 240px;
+  left: 50px;
+}
+/* Fin del formulario */

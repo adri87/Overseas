@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es-es">
+
+<head>
+	<meta content='text/html;charset=UTF-8' http-equiv='content-type'> 
+  	<title>Overseas</title> 
+  	<link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>   
+	<script type="text/javascript">
+ 	$(document).ready(function(){ 
+    		$("ul.sub").hide();                 
+    		$("#desp1:has(ul)").click(
+      			function() {
+        			$("#desp1 ul.sub").slideDown('fast');
+				$("#desp2 ul.sub").slideUp('fast');
+				$("#desp3 ul.sub").slideUp('fast');
+      			}        
+    		);
+    		$("#desp2:has(ul)").click(
+      			function() {
+        			$("#desp1 ul.sub").slideUp('fast');
+				$("#desp2 ul.sub").slideDown('fast');
+				$("#desp3 ul.sub").slideUp('fast');
+      			}        
+    		);
+    		$("#desp3:has(ul)").click(
+      			function() {
+        			$("#desp1 ul.sub").slideUp('fast');
+				$("#desp2 ul.sub").slideUp('fast');
+				$("#desp3 ul.sub").slideDown('fast');
+      			}        
+    		);
+       	});
+	</script> 
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script>
+	<![endif]-->
+</head>
+
+<body>
+	<header>
+  		<div id="cabecera_superior">
+      			<ul>
+			        <li><a href="../index.html" id="ControlCabecera_A1" class="InicioLnk">Inicio</a></li>
+        			<li><a href="" id="ControlCabecera_A2" class="ImprimirLnk" onclick="window.print(); return false;">Imprimir</a></li>
+        			<li><a href="" id="ControlCabecera_A3" class="MapaWebLnk">Mapa Web</a></li>
+        			<li><a href="contacto.html" id="ControlCabecera_A4" class="ContactoLnk">Contacto</a></li>
+      			</ul>
+    		</div>
+	
+		<div id="idiomas">
+			<a href="../index.html" class="strip1">Español</a>
+			<a href="../en/index.html" class="strip2">English</a>
+		</div>
+	</header>
+
+	<nav>
+		<li><a href="../index.html">Presentación</a></li>
+		<li><a href="historia.html">Historia</a></li>
+		<li><a href="bienvenida.html"><b>Carta de bienvenida</b></a></li>
+		<li><a href="mision.html">Misión y estrategia corporativa</a></li>
+		<li><a href="calidad.html">Calidad y certificaciones</a></li>
+		<li><a href="galeria.html">Galería</a></li>
+		<li><a>Proyectos</a></li>
+		<li class="parent" id="desp1"><a>Línea de negocio</a>
+			<ul class="sub">
+				<li><a href="ingenieria.html">Ingenería</a></li>
+				<li><a href="obra.html">Obra civil</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+			</ul>
+		</li>
+		<li class="parent" id="desp2"><a>Responsabilidad corporativa</a>
+			<ul class="sub">
+				<li><a href="compromiso.html">Compromiso</a></li>
+				<li><a href="valor.html">Creación de valor</a></li>
+				<li><a href="colaboraciones.html">Colaboraciones</a></li>
+			</ul>
+		</li>
+		<li class="parent" id="desp3"><a>Sala de prensa</a>
+			<ul class="sub">
+				<li><a href="noticias.html">Últimas noticias</a></li>
+			</ul>
+		</li>
+		<li><a href="contacto.html">Contacto</a></li>
+	</nav>
+
+	<article>
+		<div id="header">
+			<h1>Carta de bienvenida</h1>
+		</div>
+		<div id="carta"><p id="contenido">En nombre de OI&S, les doy la más cordial bienvenida a nuestra página web que esperamos contribuya a ampliar su 			conocimiento acerca de nuestro Grupo.<br><br>OI&S es una empresa que nace en el 2009 con la vocación de convertirse en un referente Español en el 			sector de la obra civil a nivel internacional, a través de sus tres líneas de negocio actuales, Ingeniería, Construcción y Servicios. La 			diversificación de los Países en los que desarrollamos proyectos, las excelentes relaciones internacionales y con otras empresas del 			sector y el compromiso con la calidad y la excelencia son las principales apuestas del Grupo.<br><br>El desarrollo sostenible es uno de los valores 			que el Grupo se ha comprometido a fomentar, siempre pensando en las generaciones futuras. Por ello todas nuestras actuaciones se rigen por políticas 			que aseguren que el Medio Ambiente no sufre ningún perjuicio por ellas. En este sentido, en OI&S contamos, con la certificación ISO 14001 cuyas 		líneas principales son la identificación y la evaluación para cada obra de los aspectos ambientales significativos y el establecimiento de prácticas 			que minimicen el impacto, así como el control de las operaciones realizadas con el objetivo de comprobar su eficacia y adecuación del Sistema de 			Gestión Ambiental.<br>La calidad y la excelencia como referentes en nuestro trabajo. Estos valores representan el carácter con el que intentamos 			desarrollar todos nuestros proyectos. Por ello, en O.I.&S. contamos con la certificación ISO 9001, acreditación que nos otorga la garantía de calidad 			en todos los procesos en los que intervenimos.<br><br>OI&S siente un compromiso especial con todos sus trabajadores, su personal subcontratado y todo 			el personal humano empleado en sus diferentes actividades. Este compromiso se traduce en la certificación OHSAS 18001, especificación de evaluación 			reconocida internacionalmente para sistemas de gestión de la salud y la seguridad en el trabajo, acreditación de la cual OI&S se siente orgullosa de 			contar.<br><br>A través de este medio de comunicación queremos poner a su disposición numerosa información acerca de nuestro grupo, sus objetivos, 			sus compromisos y demás información que pueda ser relevante. Finalmente les doy las gracias a todos y deseo poder contar con su confianza para poder 			seguir progresando, así que les invito a que se adentren en el contenido de estas páginas y a que conozcan mejor quiénes somos y qué 			hacemos.<br><br><br><br></p></div>
+		<p id="agr"><b>Bienvenidos a nuestra web</b><br>Mariano Rodriguez Llama<br>Presidente de OI&S</p>
+	</article>
+
+	<footer>
+		<p>©2012 Overseas Infrastructures & Services. Todos los derechos reservados.<p>
+		<p><a href="../index.html" id="legal">Aviso Legal</a></p> 
+	</footer>
+</body>
+
+</html>

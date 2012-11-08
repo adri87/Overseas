@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es-es">
+
+<head>
+	<meta content='text/html;charset=UTF-8' http-equiv='content-type'> 
+  	<title>Overseas</title> 
+  	<link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>   
+	<script type="text/javascript">
+ 	$(document).ready(function(){ 
+    		$("ul.sub").hide();                 
+    		$("#desp1:has(ul)").click(
+      			function() {
+        			$("#desp1 ul.sube").slideDown('fast');
+				$("#desp2 ul.sub").slideUp('fast');
+				$("#desp3 ul.sub").slideUp('fast');
+      			}        
+    		);
+    		$("#desp2:has(ul)").click(
+      			function() {
+        			$("#desp1 ul.sube").slideUp('fast');
+				$("#desp2 ul.sub").slideDown('fast');
+				$("#desp3 ul.sub").slideUp('fast');
+      			}        
+    		);
+    		$("#desp3:has(ul)").click(
+      			function() {
+        			$("#desp1 ul.sube").slideUp('fast');
+				$("#desp2 ul.sub").slideUp('fast');
+				$("#desp3 ul.sub").slideDown('fast');
+      			}        
+    		);
+       	});
+	</script> 
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script>
+	<![endif]-->
+</head>
+
+<body>
+	<header>
+  		<div id="cabecera_superior">
+      			<ul>
+			        <li><a href="../index.html" id="ControlCabecera_A1" class="InicioLnk">Inicio</a></li>
+        			<li><a href="" id="ControlCabecera_A2" class="ImprimirLnk" onclick="window.print(); return false;">Imprimir</a></li>
+        			<li><a href="" id="ControlCabecera_A3" class="MapaWebLnk">Mapa Web</a></li>
+        			<li><a href="contacto.html" id="ControlCabecera_A4" class="ContactoLnk">Contacto</a></li>
+      			</ul>
+    		</div>
+	
+		<div id="idiomas">
+			<a href="../index.html" class="strip1">Español</a>
+			<a href="../en/index.html" class="strip2">English</a>
+		</div>
+	</header>
+
+	<nav>
+		<li><a href="../index.html">Presentación</a></li>
+		<li><a href="historia.html">Historia</a></li>
+		<li><a href="bienvenida.html">Carta de bienvenida</a></li>
+		<li><a href="mision.html">Misión y estrategia corporativa</a></li>
+		<li><a href="calidad.html">Calidad y certificaciones</a></li>
+		<li><a href="galeria.html">Galería</a></li>
+		<li><a>Proyectos</a></li>
+		<li class="parent" id="desp1"><a>Línea de negocio</a>
+			<ul class="sube">
+				<li><a href="ingenieria.html"><b>Ingenería</b></a></li>
+				<li><a href="obra.html">Obra civil</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+			</ul>
+		</li>
+		<li class="parent" id="desp2"><a>Responsabilidad corporativa</a>
+			<ul class="sub">
+				<li><a href="compromiso.html">Compromiso</a></li>
+				<li><a href="valor.html">Creación de valor</a></li>
+				<li><a href="colaboraciones.html">Colaboraciones</a></li>
+			</ul>
+		</li>
+		<li class="parent" id="desp3"><a>Sala de prensa</a>
+			<ul class="sub">
+				<li><a href="noticias.html">Últimas noticias</a></li>
+			</ul>
+		</li>
+		<li><a href="contacto.html">Contacto</a></li>
+	</nav>
+
+	<article>
+		<img id="fotografia" src="../images/tuberia.jpg" />
+		<div id="header">
+			<h1>Ingenería</h1>
+		</div>
+		<p id="contenido">El campo de la Ingeniería y desarrollo de proyectos es una las líneas de negocio por la que ha apostado desde sus comienzos el 			grupo OI&S.<br><br>OI&S desarrolla proyectos de infraestructuras y servicios, como por ejemplo autopistas, viales, puentes, edificación, 			urbanizaciones, etc los cuales contribuyen a desarrollar la zona donde se implantan para la mejora del nivel de vida de las poblaciones y el 			desarrollo industrial del país.<br><br>Dentro de los proyectos de Ingeniería, y dada la historia del grupo, OI&S ha apostado especialmente por la 			obras hidráulicas, desarrollando actualmente proyectos en varios países que abarcan el ciclo completo del agua, desde su captación, potabilización 			redes de transporte y sistema tarifario, hasta alcantarillados, saneamiento y plantas de depuración.</p>
+	</article>
+
+	<footer>
+		<p>©2012 Overseas Infrastructures & Services. Todos los derechos reservados.<p>
+		<p><a href="../index.html" id="legal">Aviso Legal</a></p> 
+	</footer>
+</body>
+
+</html>

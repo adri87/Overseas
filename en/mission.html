@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es-es">
+
+<head>
+	<meta content='text/html;charset=UTF-8' http-equiv='content-type'> 
+  	<title>Overseas</title> 
+  	<link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>   
+	<script type="text/javascript">
+ 	$(document).ready(function(){ 
+    		$("ul.sub").hide();                 
+    		$("#desp1:has(ul)").click(
+      			function() {
+        			$("#desp1 ul.sub").slideDown('fast');
+				$("#desp2 ul.sub").slideUp('fast');
+				$("#desp3 ul.sub").slideUp('fast');
+      			}        
+    		);
+    		$("#desp2:has(ul)").click(
+      			function() {
+        			$("#desp1 ul.sub").slideUp('fast');
+				$("#desp2 ul.sub").slideDown('fast');
+				$("#desp3 ul.sub").slideUp('fast');
+      			}        
+    		);
+    		$("#desp3:has(ul)").click(
+      			function() {
+        			$("#desp1 ul.sub").slideUp('fast');
+				$("#desp2 ul.sub").slideUp('fast');
+				$("#desp3 ul.sub").slideDown('fast');
+      			}        
+    		);
+       	});
+	</script> 
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script>
+	<![endif]-->
+</head>
+
+<body>
+	<header>
+  		<div id="cabecera_superior">
+      			<ul>
+			        <li><a href="index.html" id="ControlCabecera_A1" class="InicioLnk">Home</a></li>
+        			<li><a href="" id="ControlCabecera_A2" class="ImprimirLnk" onclick="window.print(); return false;">Print</a></li>
+        			<li><a href="" id="ControlCabecera_A3" class="MapaWebLnk">SiteMap</a></li>
+        			<li><a href="contact.html" id="ControlCabecera_A4" class="ContactoLnk">Contact</a></li>
+      			</ul>
+    		</div>
+	
+		<div id="idiomas">
+			<a href="../index.html" class="strip1">Español</a>
+			<a href="index.html" class="strip2">English</a>
+		</div>
+	</header>
+
+	<nav>
+		<li><a href="index.html">Presentation</a></li>
+		<li><a href="history.html">History</a></li>
+		<li><a href="welcome.html">Welcome letter</a></li>
+		<li><a href="mission.html"><b>Mission and corporate strategy</b></a></li>
+		<li><a href="quality.html">Quality and Certifications</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a>Projects</a></li>
+		<li class="parent" id="desp1"><a>Line of business</a>
+			<ul class="sub">
+				<li><a href="ingeniery.html">Ingenery</a></li>
+				<li><a href="work.html">Civil works</a></li>
+				<li><a href="services.html">Services</a></li>
+			</ul>
+		</li>
+		<li class="parent" id="desp2"><a>Corporate responsibility</a>
+			<ul class="sub">
+				<li><a href="commitment.html">Commitment</a></li>
+				<li><a href="value.html">Value creation</a></li>
+				<li><a href="collaborations.html">Collaborations</a></li>
+			</ul>
+		</li>
+		<li class="parent" id="desp3"><a>Press room</a>
+			<ul class="sub">
+				<li><a href="news.html">News</a></li>
+			</ul>
+		</li>
+		<li><a href="contact.html">Contact</a></li>
+	</nav>
+
+	<article>
+		<img id="fotografia" src="../images/tuberia.jpg" />
+		<div id="header">
+			<h1>Mission and corporate strategy</h1>
+		</div>
+		<div id="contenido1">		
+			<section>
+				<div id="header1">
+					<h1>MISSION</h1>
+				</div>
+				<p>The group's mission is to strengthen our business in the field of civil works internationally, with the approach of growth in an 					orderly and planned, and always under the standard of quality, efficiency and optimization. This value creation is always done in 					terms of economic, social and environmental.<br><br>Given the experience and relationships of its Partners, OI&S wants to improve the 					quality of life of the citizens of the countries in which it operates. Therefore OI&S has chosen to undertake Engineering Projects, 					Construction and Services in the area of ​​civil works internationally.</p>
+			</section>
+			<section>
+				<div id="header1">
+					<h1>CORPORATE STRATEGY</h1>
+				</div>
+				<p>To achieve the objectives set by the Group, OI&S has a corporate strategy based on diversification of its clients and countries in 					which it operates, but always with the approach of sustainable growth, ordered and planned.<br><br>Always following a strict 					long-term policy, OI&S follows strict selection criteria and recruitment and prudence in choosing their projects.<br><br>On the 				economic situation in which it was founded OI&S, and understanding it as a profound change in the way of organizing and maintaining 					businesses, OI&S is committed to a strong commitment to maintaining an economic structure solid, raising much of their economic 				resources funded own partners and investors and long-term financial resources.</p>
+			</section>
+		</div>
+	</article>
+
+	<footer>
+		<p>©2012 Overseas Infrastructures & Services. All rights reserved.<p>
+		<p><a href="index.html" id="legal">Legal Notice</a></p> 
+	</footer>
+</body>
+
+</html>

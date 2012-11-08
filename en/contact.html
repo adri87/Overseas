@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es-es">
+
+<head>
+	<meta content='text/html;charset=UTF-8' http-equiv='content-type'> 
+  	<title>Overseas</title> 
+  	<link href="../css/stylesheet.css" rel="stylesheet" type="text/css">
+<!-- Códigos de validación para el formulario -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="../js/jquery.validate.js"></script>
+	<script src="../js/jquery.form.js"></script>
+<!-- Script que llama a la validación del formulario -->
+	<script>
+		$(function(){
+			$('#formulario').validate({
+				submitHandler: function(form) {
+				    $(form).ajaxSubmit({
+					    url: '../php/proceso1.php',
+					    success: function() {
+						    $('#Contacto h1').hide();
+						    $('#formulario').hide();
+						    $('#Contacto').append("<p class='gracias'>Gracias por contactar con nosotros.</p>")
+					    }
+				    });
+			    }
+			});    
+		});
+	</script>
+<!-- Fin códigos de validación del formulario -->
+	<script type="text/javascript">
+ 	$(document).ready(function(){ 
+    		$("ul.sub").hide();                 
+    		$("#desp1:has(ul)").click(
+      			function() {
+        			$("#desp1 ul.sub").slideDown('fast');
+				$("#desp2 ul.sub").slideUp('fast');
+				$("#desp3 ul.sub").slideUp('fast');
+      			}        
+    		);
+    		$("#desp2:has(ul)").click(
+      			function() {
+        			$("#desp1 ul.sub").slideUp('fast');
+				$("#desp2 ul.sub").slideDown('fast');
+				$("#desp3 ul.sub").slideUp('fast');
+      			}        
+    		);
+    		$("#desp3:has(ul)").click(
+      			function() {
+        			$("#desp1 ul.sub").slideUp('fast');
+				$("#desp2 ul.sub").slideUp('fast');
+				$("#desp3 ul.sub").slideDown('fast');
+      			}        
+    		);
+       	});
+	</script> 
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"> </script>
+	<![endif]-->
+</head>
+
+<body>
+	<header>
+  		<div id="cabecera_superior">
+      			<ul>
+			        <li><a href="index.html" id="ControlCabecera_A1" class="InicioLnk">Home</a></li>
+        			<li><a href="" id="ControlCabecera_A2" class="ImprimirLnk" onclick="window.print(); return false;">Print</a></li>
+        			<li><a href="" id="ControlCabecera_A3" class="MapaWebLnk">SiteMap</a></li>
+        			<li><a href="contact.html" id="ControlCabecera_A4" class="ContactoLnk">Contact</a></li>
+      			</ul>
+    		</div>
+	
+		<div id="idiomas">
+			<a href="../index.html" class="strip1">Español</a>
+			<a href="index.html" class="strip2">English</a>
+		</div>
+	</header>
+
+	<nav>
+		<li><a href="index.html">Presentation</a></li>
+		<li><a href="history.html">History</a></li>
+		<li><a href="welcome.html">Welcome letter</a></li>
+		<li><a href="mission.html">Mission and corporate strategy</a></li>
+		<li><a href="quality.html">Quality and Certifications</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a>Projects</a></li>
+		<li class="parent" id="desp1"><a>Line of business</a>
+			<ul class="sub">
+				<li><a href="ingeniery.html">Ingenery</a></li>
+				<li><a href="work.html">Civil works</a></li>
+				<li><a href="services.html">Services</a></li>
+			</ul>
+		</li>
+		<li class="parent" id="desp2"><a>Corporate responsibility</a>
+			<ul class="sub">
+				<li><a href="commitment.html">Commitment</a></li>
+				<li><a href="value.html">Value creation</a></li>
+				<li><a href="collaborations.html">Collaborations</a></li>
+			</ul>
+		</li>
+		<li class="parent" id="desp3"><a>Press room</a>
+			<ul class="sub">
+				<li><a href="news.html">News</a></li>
+			</ul>
+		</li>
+		<li><a href="contact.html"><b>Contact</b></a></li>
+	</nav>
+	
+	<article id="Contacto">
+		<div id="header">
+			<h1>Contact</h1>
+		</div>
+		<div id="contform">
+			<form id="formulario" name="formularioContacto" method="post" action="./php/proceso1.php" >
+				<label for="nombre_contacto">Name*:</label>
+				<input name="nombre_contacto" placeholder="Introduce tu nombre" class="required" /><br />
+        
+				<label for="apellidos_contacto">Surname*:</label>
+				<input name="apellidos_contacto" placeholder="Introduce tus apellidos" class="required" /><br />
+                	
+				<label for="empresa">Enterprise:</label>
+				<input name="empresa" placeholder="¿En que empresa trabajas actualmente?" /><br />
+    	
+				<label for="cargo">Departament:</label>
+				<input name="cargo" placeholder="¿Qué función desempeñas?" /><br />
+            	
+				<label for="telefono">Telephone:</label>
+				<input name="telefono" placeholder="Introduce un teléfono de contacto" /><br />
+        	
+				<label for="email">E-mail*:</label>
+				<input name="email" placeholder="Introduce tu e-mail" class="required" /><br />
+            	
+				<label for="mensaje">Comment:</label>
+				<textarea id="mensaje" placeholder="Razón por la cuál contactas con nosotros" name="AreaTexto"></textarea>
+	
+				<label for="curriculum">File to attach :</ label>			
+				<input id="fichero" name="fichero" type="file" /><br />
+                
+				<div id="anotacion" > * Required fields</div>
+                            
+				<input class="botonAcceder" type="submit" id="boton" value="Enviar" />
+			</form>
+		</div> 	  
+	</article>
+
+	<footer>
+		<p>©2012 Overseas Infrastructures & Services. All rights reserved.<p>
+		<p><a href="index.html" id="legal">Legal Notice</a></p> 
+	</footer>
+
+</body>
+
+</html>
