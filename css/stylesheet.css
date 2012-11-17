@@ -1,25 +1,25 @@
 body {
   margin-left: 12.5%;
   margin-right: 12.5%;
-  height: 860px;
   background-color: #BDBDBD;
   font-family: Arial, Helvetica, "Times New Roman", sans-serif;
   text-align:justify;
   color: #000000;
   margin-top: 0;
   border-style: double;
+  position: absolute;
 }
 
 /* Cabecera */
 header {
-  width: 100%;
-  height: 192px;
+  height: 12em;
   position: relative;
   background-image: url("../images/logooverseas.png");
-  background-size: 100% 192px;
+  background-size: 100% 100%;
   margin-top: -1em;
   border-bottom-style: ridge;
   border-color: #696969;
+  position: relative;
 }
 
 /* Iconos */
@@ -41,112 +41,111 @@ header {
 
 #cabecera_superior ul li a{
   text-decoration:none;
-  color: #000000;
+  color: #FFFFFF;
 }
 
 #cabecera_superior ul li a.InicioLnk {
-  padding-left: 1.8%;
+  padding-left: 20px;
   background: url(../images/icons/house.png) center left no-repeat;
-  background-size: 35%;    
-  -moz-background-size: 35%;    
-  -o-background-size:35%;    
-  -webkit-background-size: 35%;      
+  background-size: 1.25em;    
+  -moz-background-size: 1.25em;    
+  -o-background-size:1.25em;    
+  -webkit-background-size: 1.25em;      
 }
 
 #cabecera_superior ul li a.ImprimirLnk {
-  padding-left: 1.8%;
+  padding-left: 20px;
   background: url(../images/icons/printer.png) center left no-repeat;
-  background-size: 25%;    
-  -moz-background-size: 25%;    
-  -o-background-size:25%;    
-  -webkit-background-size: 25%; 
+  background-size: 1.25em;    
+  -moz-background-size: 1.25em;    
+  -o-background-size:1.25em;    
+  -webkit-background-size: 1.25em; 
 }
 
 #cabecera_superior ul li a.MapaWebLnk {
-  padding-left: 1.8%;
+  padding-left: 20px;
   background: url(../images/icons/sitemap.png) center left no-repeat;
-  background-size: 20%;    
-  -moz-background-size: 20%;    
-  -o-background-size:20%;    
-  -webkit-background-size: 20%; 
+  background-size: 1.25em;    
+  -moz-background-size: 1.25em;    
+  -o-background-size:1.25em;    
+  -webkit-background-size: 1.25em; 
 }
 
 #cabecera_superior ul li a.ContactoLnk {
-  padding-left: 1.8%;
+  padding-left: 20px;
   background: url(../images/icons/email.png) center left no-repeat;
-  background-size: 20%;    
-  -moz-background-size: 20%;    
-  -o-background-size:20%;    
-  -webkit-background-size: 20%; 
+  background-size: 1.25em;    
+  -moz-background-size: 1.25em;    
+  -o-background-size:1.25em;    
+  -webkit-background-size: 1.25em; 
 }
 
 /* Idiomas */
 #idiomas {
-  margin-left: 82%;
+  padding-left: 45em;
+  top: 10.5em;
   position: relative;
-  top: 71%;
   font-size: 0.8em;
   display: inline;
 }
 
 #idiomas a {
-  margin-left: 1%;
+  margin-left: 0.5em;
   text-decoration: none;
   color: #000000;
 }
 
 #idiomas a.strip1 {
-  padding-left: 2.5%;
+  padding-left: 20px;
   background: url(../images/flaps/es.png) center left no-repeat;
-  background-size: 32%;    
-  -moz-background-size: 32%;    
-  -o-background-size:32%;    
-  -webkit-background-size: 32%;
+  background-size: 1.5em;    
+  -moz-background-size: 1.5em;    
+  -o-background-size:1.5em;    
+  -webkit-background-size: 1.5em;
 }
 
 #idiomas a.strip2 {
-  padding-left: 2.5%;
+  padding-left: 20px;
   background: url(../images/flaps/en.png) center left no-repeat;
-  background-size: 32%;    
-  -moz-background-size: 32%;    
-  -o-background-size:32%;    
-  -webkit-background-size: 32%; 
+  background-size: 1.5em;    
+  -moz-background-size: 1.5em;    
+  -o-background-size:1.5em;    
+  -webkit-background-size: 1.5em; 
 }
 
 /* Pie de pagína */
-footer{
-  margin-left: 27%;
+#footer{
   font-size: 0.7em;
-  height: 48px;
   width: 100%;
+  background-color: #6F909E;
 }
 
-footer p {
+#footer p {
   display: inline;
+  margin-left: 3.5em;
 }
 
-footer p #legal {
-  color: #000000;
+#footer a {
+  margin-left: -7em;
 }
 
 /* Menú */
 nav {
-  width: 24.7%;
-  height: 630px;
+  width: 12em;
+  height: 60em;
   float: left;
-  background-color: #2E64FE;
-  padding-top: 2%;
+  background-color: #30485D;
+  padding-top: 0.8em;
   border-right-style: dotted;
   border-color: #0B0B61;
+  position: relative;
 }
 
 nav li{
-  margin-top: 2.5%;
-  margin-left: 10%;
-  width: 80%;
+  margin-top: 8px;
+  margin-left: 20px;
   list-style-type: none;
-  background-color: #2E64FE;
-  /*border-bottom-style: dotted;*/
+  background-color: #30485D;
   border-color: #FFFFFF;
   border-width: thin;
 }
@@ -159,13 +158,14 @@ nav li a{
   color: #FFFFFF;
   text-decoration: none;
   display:block;
-  background-color: #2E64FE;
+  background-color: #30485D;
 }
 
 nav li a:hover {
   background-color: #6495ED;
   text-decoration: none; 
   border-radius: 5px;
+ 
 }
 
 nav .parent {
@@ -178,6 +178,10 @@ nav li.parent a:hover{
   cursor: pointer;
 } 
 
+nav li .sub {
+   margin-right: 1em;
+}
+
 nav li ul li {
   list-style-image: none;
 }
@@ -185,18 +189,17 @@ nav li ul li {
 
 /* Contenido */
 article {
-  width: 75%;
-  height: 650px;
+  width: 33em;
+  height: 60em;
   float: right;
-  background-color: #E0F2F7;
+  background-color: #8098AE;
 }
 
 article #header {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #0404B4;
-  width: 40%;
-  margin-left: 15%;
-  margin-top: 5%;
+  width: 15.5em;
+  margin-left: 4.25em;
   background-color: #FFFAFA;
   text-align: left;
   border-top-left-radius: 15px;
@@ -207,15 +210,15 @@ article #header {
 }
 
 article #header h1{
-  padding-left: 3.5%;
+  padding-left: 0.4em;
 }
 
 #contenido {
   font-size: 0.8em;
-  margin-left: 12.5%;
-  width: 70%;
-  padding: 2%;
-  margin-top: -3.5%;
+  margin-left: 4.5em;
+  width: 30em;
+  padding: 1em;
+  margin-top: -2em;
   background-color: #FFFAFA;
   border-radius: 15px;	
   -webkit-box-shadow: 12px 12px 12px #000000;
@@ -236,11 +239,10 @@ article #header h1{
 
 #contenido1 {
   font-size: 0.8em;
-  margin-left: 12.5%;
-  width: 70%;
-  padding: 2%;
-  padding-top: 1%;
-  margin-top: -3.5%;
+  margin-left: 4.5em;
+  width: 30em;
+  padding: 1em;
+  margin-top: -2em;
   background-color: #FFFAFA;
   border-radius: 15px;	
   -webkit-box-shadow: 12px 12px 12px #000000;
@@ -257,11 +259,11 @@ article #header h1{
 
 #contform {
   font-size: 0.8em;
-  margin-left: 12.5%;
-  width: 70%;
-  height: 480px;
-  padding: 2%;
-  margin-top: -3.5%;
+  margin-left: 4.5em;
+  width: 30em;
+  height: 45em;
+  padding: 1em;
+  margin-top: -2em;
   background-color: #FFFAFA;
   border-radius: 15px;	
   -webkit-box-shadow: 12px 12px 12px #000000;
@@ -274,13 +276,13 @@ article ul li {
 }
 
 #fotografia {
-  height: 20%;
-  width: 20%;
+  height: 10em;
+  width: 10em;
   float: right;
-  margin-right: 7%;
-  margin-top: 3%;
+  margin-right: 1.5em;
+  margin-top: 1em;
   border-radius: 25px;
-  padding: 1%;
+  padding: 0.5em;
 }
 
 #carta p {
@@ -293,18 +295,35 @@ article ul li {
   font-size: 0.8em;
   float: right;
   position:relative;
-  bottom: 90px;
-  margin-right: 115px;
+  bottom: 6.5em;
+  margin-right: 5.7em;
   text-align: right;
-  width: 25%;
 }
+/* Mapa web */
+article li{
+  margin-top: 8px;
+  margin-left: 20px;
+  list-style-image: url("../images/icons/arrow.gif");
+}
+
+article .noarrow {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+article a {
+  text-decoration: none;
+  color: #000000;
+}
+/* Fin mapa web */
+
 /* Fin del contenido */
 
 /* Galería */
 #sliderContainer {
-  top: 10%; 
-  width: 500px; 
-  height: 300px; 
+  top: 3em; 
+  width: 27em; 
+  height: 20em; 
   position: relative; 
   border-top: 2px solid #999; 
   border-bottom: 2px solid #999; 
@@ -314,15 +333,15 @@ article ul li {
 .slideContent {  
   background:url("../images/contentBg.png") repeat scroll 0 0 transparent; 
   position: absolute; 
-  bottom:0px; 
+  bottom: 0;
   padding: 10px; 
-  width: 500px; 
+  width: 27em; 
 }
 
 .slide h3 {  
   font: 26px/1em 'Rokkitt', serif; 
   color: #FFF;  
-  margin: 0 0 5px 0; 
+  margin: 0; 
 }
 
 .slide p { 
@@ -425,7 +444,8 @@ a.form{
 
 label.error { 
   position: relative;
-  margin-top:-14px;
+  margin-top:-3.25em;
+  left:15em;
   color:red;
   float: left;
 }
@@ -447,7 +467,7 @@ label.error {
   width: 100px;
   height: 30px;
   position: relative;
-  left: 200px; 
+  left: 10em;
 }
 
 #formulario #anotacion {
@@ -457,9 +477,9 @@ label.error {
 
 .gracias{
   color:red;
+  bottom: 17.5em;
+  left: 3em;
   font-size:1.5em;
   position: relative;
-  top: 240px;
-  left: 50px;
 }
 /* Fin del formulario */
